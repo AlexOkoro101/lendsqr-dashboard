@@ -8,22 +8,18 @@ export interface MiddlewareAttributes {
 }
 
 export const Middleware: React.FC<MiddlewareAttributes> = ({ children }) => {
-  const { isLoading, isLoggedIn }: any = useAuth();
+  const { isLoading, user }: any = useAuth();
   const location = useLocation();
-  const Spinner = require('react-spinkit');
 
   if (isLoading) {
     return (
       <div className="">
-        <Spinner
-          name="double-bounce"
-          color="purple.500"
-        />
+        Loading...
       </div>
     );
   }
 
-  if (!isLoggedIn) {
+  if (!user) {
     return (
       <div className="">
         <Navigate to="/login" state={{ from: location }} replace />
