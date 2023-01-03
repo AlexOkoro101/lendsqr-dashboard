@@ -1,4 +1,4 @@
-import './App.css';
+import '../src/style/main.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Middleware } from './components/common/auth/middleware';
 import DefaultLayout from './components/layouts/default';
