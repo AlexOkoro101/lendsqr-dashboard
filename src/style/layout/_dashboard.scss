@@ -1,0 +1,19 @@
+.default-layout {
+
+  .main-content {
+    display: flex;
+
+    .dashboard-outlet {
+      padding: 60px;
+      background-color: #fbfbfb;
+      flex-grow: 1;
+      height: calc(100vh - 221px);
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .dashboard-outlet::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

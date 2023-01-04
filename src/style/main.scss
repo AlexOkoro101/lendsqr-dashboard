@@ -4,13 +4,16 @@
 
 //components
 @import "layout/auth";
+@import "layout/dashboard.scss";
 @import "common/input.scss";
 @import "common/button.scss";
 @import "common/loader.scss";
 @import "common/dashboard/navbar.scss";
+@import "common/dashboard/sidebar.scss";
 
 //pages
 @import "pages/login.scss";
+@import "pages/users.scss";
 
 body {
   margin: 0;

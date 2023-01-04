@@ -21,6 +21,10 @@
     align-items: center;
     gap: 168.2px;
 
+    @media (max-width: 1024px) {
+      gap: 25px;
+    }
+
     .logo {
       width: 144.8px;
     }

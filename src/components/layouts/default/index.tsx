@@ -5,11 +5,13 @@ import Sidebar from '../../common/dashboard/sidebar';
 
 const DefaultLayout = () => {
   return (
-    <div>
+    <div className="default-layout">
       <Navbar />
-      <div>
+      <div className="main-content">
         <Sidebar />
-        <Outlet />
+        <div className="dashboard-outlet">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

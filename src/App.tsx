@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Middleware } from './components/common/auth/middleware';
 import DefaultLayout from './components/layouts/default';
 import AuthLayout from './components/layouts/auth';
-import User from './pages/dashboard/user';
+import Users from './pages/dashboard/users';
 import Login from './pages/auth/login';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           path="/"
           element={
             <Middleware>
-              <User />
+              <Users />
             </Middleware>
           }
         >
