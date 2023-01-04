@@ -1,5 +1,16 @@
-@import "common/colors";
-@import "common/variables";
+//settings
+@import "colors";
+@import "variables";
+
+//components
+@import "layout/auth";
+@import "common/input.scss";
+@import "common/button.scss";
+@import "common/loader.scss";
+@import "common/dashboard/navbar.scss";
+
+//pages
+@import "pages/login.scss";
 
 body {
   margin: 0;

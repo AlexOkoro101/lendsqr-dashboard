@@ -13,7 +13,7 @@ export const AuthProvider: React.FC<PropsWithChildren<{}>> = ({ children }) => {
       setIsLoading,
       setUser
     };
-  }, []);
+  }, [isLoading, user]);
 
   return (
     <AuthContext.Provider value={memoedValue}>

@@ -13,7 +13,7 @@ export const Middleware: React.FC<MiddlewareAttributes> = ({ children }) => {
 
   if (isLoading) {
     return (
-      <div className="">
+      <div className="loader">
         Loading...
       </div>
     );

@@ -1,11 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Navbar from '../../common/dashboard/navbar';
+import Sidebar from '../../common/dashboard/sidebar';
 
 const DefaultLayout = () => {
   return (
     <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, maxime?
-      <Outlet />
+      <Navbar />
+      <div>
+        <Sidebar />
+        <Outlet />
+      </div>
     </div>
   );
 };
