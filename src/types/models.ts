@@ -64,3 +64,7 @@ export interface UserOptionsProps {
 export type FilterProps = UserOptionsProps;
 
 export type TableModalType = 'options' | 'filter';
+
+export interface SidebarProps {
+  sidebarIsVisible: boolean;
+}

@@ -2,6 +2,7 @@
 
   .main-content {
     display: flex;
+    position: relative;
 
     .dashboard-outlet {
       padding: 60px;
@@ -12,6 +13,10 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
 
+      @media (max-width: 600px) {
+        padding: 35px;
+      }
+
       .header {
         font-weight: 500;
         color: $bluePrimary;
@@ -21,6 +26,16 @@
     }
     .dashboard-outlet::-webkit-scrollbar {
       display: none;
+    }
+
+    .toggle-sidebar {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+
+      @media (min-width: 600px) {
+        display: none;
+      }
     }
   }
 }

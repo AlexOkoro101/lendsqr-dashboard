@@ -42,6 +42,9 @@
     }
   }
 }
+.card:has( > .table ) {
+  overflow-x: auto;
+}
 
 // users filter modal stylings
 
@@ -112,6 +115,18 @@
   width: max-content;
   top: 200px;
   right: -13px;
+
+  @media (max-width: 1024px) {
+    right: -160px;
+  }
+
+  @media (max-width: 912px) {
+    right: -300px;
+  }
+
+  @media (max-width: 412px) {
+    right: -412px;
+  }
 }
 
 //pagination styling
@@ -120,6 +135,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 
   .left-side {
     display: flex;

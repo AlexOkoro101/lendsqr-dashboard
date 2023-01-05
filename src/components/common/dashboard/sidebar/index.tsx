@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { dashboardRoutes } from '../../../../routes';
+import { SidebarProps } from '../../../../types/models';
 import SideLink from './components/sidelink';
 
-const Sidebar = () => {
+const Sidebar: FC<SidebarProps> = ({ sidebarIsVisible }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebarIsVisible && 'show-sidebar'}`}>
       <div className="main-routes">
         {dashboardRoutes.mainRoutes.map((route, index) => (
           <SideLink

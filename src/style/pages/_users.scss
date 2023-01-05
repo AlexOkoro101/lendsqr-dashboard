@@ -5,5 +5,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 26px;
     margin: 40px 0 40px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -145,7 +145,7 @@ const UserDetails = () => {
                 </div>
                 <div className="detail">
                   <span className="detail-key">Monthly income</span>
-                  <span className="detail-value">₦{fetchObj?.data.education.monthlyIncome[0]} - ₦{fetchObj?.data.education.monthlyIncome[0]}</span>
+                  <span className="detail-value">₦{fetchObj?.data.education.monthlyIncome[0]} - ₦{fetchObj?.data.education.monthlyIncome[1]}</span>
                 </div>
                 <div className="detail">
                   <span className="detail-key">loan repayment</span>
