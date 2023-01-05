@@ -9,11 +9,16 @@
 @import "common/button.scss";
 @import "common/loader.scss";
 @import "common/dashboard/navbar.scss";
+@import "common/dashboard/nav-tabs.scss";
 @import "common/dashboard/sidebar.scss";
+@import "common/dashboard/table.scss";
+@import "common/dashboard/card.scss";
+@import "common/dashboard/analytics-card.scss";
 
 //pages
 @import "pages/login.scss";
 @import "pages/users.scss";
+@import "pages/user-details.scss";
 
 body {
   margin: 0;

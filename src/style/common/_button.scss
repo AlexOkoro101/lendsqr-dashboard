@@ -13,39 +13,65 @@
   cursor: pointer;
 }
 
-.form-button-outlined {
-  border-radius: 8px;
-  background-color: $green100;
-  width: 100%;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: $fontSM;
-  color: $white;
-}
-
 .form-button-default-small {
   border-radius: 8px;
   background-color: $green100;
   width: 100%;
-  height: 48px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: $fontSM;
   color: $white;
+  font-weight: 600;
+  border: none;
 }
 
 .form-button-outlined-small {
   border-radius: 8px;
-  background-color: $green100;
+  background-color: $white;
   width: 100%;
-  height: 48px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: $fontSM;
-  color: $white;
+  color: $blueSecondary;
+  font-weight: 600;
+  border: 1px solid $blueSecondary;
+}
+
+.status-button {
+  padding: 7px 12px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  font-size: $fontSM;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.status-button-active {
+  background-color: #f3fcf6;
+  color: $green200;
+}
+
+.user-details-button {
+  width: 170px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: $fontSM;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $white;
+}
+
+.user-details-button-success {
+  border: 1px solid $green100;
+  color: $green100;
+}
+.user-details-button-danger {
+  border: 1px solid $red200;
+  color: $red200;
 }
 

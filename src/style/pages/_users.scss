@@ -1,0 +1,9 @@
+.users {
+  
+  .figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 26px;
+    margin: 40px 0 40px;
+  }
+}

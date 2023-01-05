@@ -1,0 +1,37 @@
+.card-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.primary-card {
+  background-color: $pink100;
+}
+.info-card {
+  background-color: $blue100;
+}
+.warning-card {
+  background-color: $orange100;
+}
+.danger-card {
+  background-color: $red100;
+}
+
+.analytic-key {
+  display: block;
+  margin-bottom: 12px;
+  color: $blueSecondary;
+  font-weight: 500;
+  font-size: $fontSM;
+  text-transform: uppercase;
+}
+
+.analytic-value {
+  display: block;
+  color: $bluePrimary;
+  font-weight: 600;
+  font-size: $fontXXL;
+}

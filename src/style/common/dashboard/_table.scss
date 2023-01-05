@@ -1,0 +1,185 @@
+.table {
+  width: 100%;
+
+  thead {
+    th {
+      text-align: left;
+
+      span {
+        margin-right: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: $fontXS;
+        color: $blueSecondary;
+      }
+
+      .filter {
+        cursor: pointer;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 61px;
+
+      td {
+        border-bottom: 1px solid #eff1f5;
+        border-collapse: collapse;
+        font-size: $fontSM;
+        font-weight: 400;
+        color: $blueSecondary;
+
+        .more-options {
+          cursor: pointer;
+        }
+      }
+    }
+    tr:last-child {
+      td {
+        border: none;
+      }
+    }
+  }
+}
+
+// users filter modal stylings
+
+.filter-form {
+  width: 230px;
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+  }
+}
+
+.card:has( > .filter-form-visible ) {
+  display: block;
+}
+
+.card:has( > .filter-form-hidden ) {
+  display: none;
+}
+
+.card:has( > .filter-form ) {
+  width: max-content;
+  position: absolute;
+  top: 60px;
+  left: 14px;
+}
+
+// user options modal stylings
+.user-options {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  li {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+    span {
+      font-size: $fontSM;
+      font-weight: 500;
+      color: $blueSecondary;
+    }
+  }
+}
+
+.card:has( > .user-options-hidden ) {
+  display: none;
+}
+
+.card:has( > .user-options-visible ) {
+  display: block;
+}
+
+.card:has( > .user-options ) {
+  position: absolute;
+  width: max-content;
+  top: 200px;
+  right: -13px;
+}
+
+//pagination styling
+.pagination {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-side {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .showing, .out-of {
+      font-size: $fontSM;
+      color: $blueSecondary;
+      font-weight: 400;
+    }
+
+    select {
+      border-radius: 4px;
+      background-color: #e5e8ee;
+      padding: 7px 12px;
+      color: $bluePrimary;
+      font-weight: 500;
+      font-size: $fontSM;
+      border: none;
+    }
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .left-button, .right-button {
+      background-color: #e5e8ee;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+    }
+
+    .left-button {
+      opacity: 0.6;
+    }
+
+    .page-numbers {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      li {
+        color: #979daf;
+        font-weight: 400;
+        font-size: $fontMD;
+        list-style: none;
+      }
+
+      li.active {
+        color: $blueSecondary;
+      }
+    }
+  }
+}

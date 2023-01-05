@@ -11,6 +11,13 @@
       overflow-y: auto;
       -ms-overflow-style: none;
       scrollbar-width: none;
+
+      .header {
+        font-weight: 500;
+        color: $bluePrimary;
+        font-size: $fontXXL;
+        margin: 0;
+      }
     }
     .dashboard-outlet::-webkit-scrollbar {
       display: none;

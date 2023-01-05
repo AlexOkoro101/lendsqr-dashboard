@@ -5,6 +5,7 @@ import DefaultLayout from './components/layouts/default';
 import AuthLayout from './components/layouts/auth';
 import Users from './pages/dashboard/users';
 import Login from './pages/auth/login';
+import UserDetails from './pages/dashboard/users/userDetails';
 
 function App() {
   return (
@@ -17,9 +18,15 @@ function App() {
               <Users />
             </Middleware>
           }
-        >
-
-        </Route>
+        ></Route>
+        <Route
+          path="/user/:id"
+          element={
+            <Middleware>
+              <UserDetails />
+            </Middleware>
+          }
+        ></Route>
       </Route>
       <Route element={<AuthLayout />}>
         <Route
